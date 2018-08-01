@@ -1,0 +1,19 @@
+{
+  "name": "sfu-code",
+  "version": "0.1.0",
+  "description": "",
+  "main": "_site/index.html",
+  "dependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.1.3",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Macguire Rintoul",
+  "license": "ISC"
+}
