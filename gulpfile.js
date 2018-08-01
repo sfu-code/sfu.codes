@@ -4,11 +4,16 @@ var child = require('child_process');
 var gutil = require('gulp-util');
 var browserSync = require('browser-sync').create();
 
-let scssPath = './scss/**/*.scss';
+let scssPath = './_scss/*.scss';
 let siteRoot = '_site';
 
 gulp.task('jekyll', function() {
-    var jekyll = child.spawn('jekyll', ['build', '--watch']);
+    var jekyll = child.spawn('jekyll', [
+        'build',
+        '--watch',
+        '--incremental',
+        '--drafts'
+    ]);
 
     var jekyllLogger = function(buffer) {
       buffer.toString()
@@ -21,9 +26,9 @@ gulp.task('jekyll', function() {
 });
 
 gulp.task('scss', function () {
-  return gulp.src('./scss/**/*.scss')
+  return gulp.src('./_scss/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./_site/css'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('serve', function() {
