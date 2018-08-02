@@ -3,13 +3,13 @@
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
-//@import "type";
+//@import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/images";
 //@import "code";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/tables";
 //@import "forms";
-//@import "buttons";
+@import "../node_modules/bootstrap/scss/buttons";
 //@import "transitions";
 @import "../node_modules/bootstrap/scss/dropdown";
 //@import "button-group";
@@ -17,7 +17,7 @@
 //@import "custom-forms";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
-//@import "card";
+@import "../node_modules/bootstrap/scss/card";
 //@import "breadcrumb";
 //@import "pagination";
 //@import "badge";
@@ -38,16 +38,9 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
 
 body {
-    font-family: 'Quicksand';
-}
-
-body {
     font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 60s ease infinite;
-	-moz-animation: Gradient 60s ease infinite;
-	animation: Gradient 60s ease infinite;
+    background: rgb(131,58,180);
+    background: linear-gradient(346deg, rgba(131,58,180,1) 0%, rgba(233,57,57,1) 60%, rgba(248,255,39,1) 100%);
 }
 
 @-webkit-keyframes Gradient {
@@ -84,4 +77,8 @@ body {
 	100% {
 		background-position: 0% 50%
 	}
+}
+
+.mandate {
+    background: #131733;
 }
