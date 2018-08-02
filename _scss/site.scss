@@ -1,4 +1,6 @@
-// default bootstrap
+// these are all the imports from the default bootstrap package
+// rather than deleting them, comment them out if they're unused
+// so that if we ever need to use them, it's as easy as uncommenting
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -36,54 +38,38 @@
 //@import "print";
 
 // startbootstrap-creative theme
-//@import '../node_modules/startbootstrap-creative/scss/creative.scss';
-@import '../node_modules/startbootstrap-creative/scss/creative.scss';
+// these are all the imports from the startbootstrap-creative theme
+// rather than deleting them, comment them out if they're unused
+// so that if we ever need to use them, it's as easy as uncommenting
+@import '../node_modules/startbootstrap-creative/scss/_variables.scss';
+@import "../node_modules/startbootstrap-creative/scss/_mixins.scss";
+@import "../node_modules/startbootstrap-creative/scss/_global.scss";
+@import "../node_modules/startbootstrap-creative/scss/_navbar.scss";
+@import "../node_modules/startbootstrap-creative/scss/_masthead.scss";
+//@import "../node_modules/startbootstrap-creative/scss/_services.scss";
+//@import "../node_modules/startbootstrap-creative/scss/_portfolio.scss";
+//@import "../node_modules/startbootstrap-creative/scss/_bootstrap-overrides.scss";
 
-// quicksand typeface
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600,700|IBM+Plex+Sans:700');
 
 // custom scss
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'IBM Plex Mono', sans-serif;
     background: rgb(131,58,180);
     background: linear-gradient(346deg, rgba(131,58,180,1) 0%, rgba(233,57,57,1) 60%, rgba(248,255,39,1) 100%);
 }
 
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#mainNav,
+#mainNav .navbar-brand {
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
 
 .mandate {
     background: #131733;
