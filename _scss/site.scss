@@ -1,8 +1,10 @@
+// bulma :)
 @import '../node_modules/bulma/bulma.sass';
 
+// IBM Plex Sans & Mono
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600,700|IBM+Plex+Sans:400,500,700');
 
-// custom scss
+// Custom styles
 body {
     font-family: 'IBM Plex Mono', sans-serif;
     background: rgb(131,58,180);
@@ -14,24 +16,15 @@ h2,
 h3,
 h4,
 h5,
-h6,
-#mainNav,
-#mainNav .navbar-brand {
+h6 {
   font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.mandate {
-    background: #131733;
-}
-
-.culture {
-    background: #5d29b4;
 }
 
 pre {
   background-color: transparent;
   padding: 0;
-  code {
-    border-radius: 10px;
-  }
+}
+
+.rounded {
+  border-radius: 10px;
 }

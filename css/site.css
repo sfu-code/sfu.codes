@@ -6430,19 +6430,12 @@ h2,
 h3,
 h4,
 h5,
-h6,
-#mainNav,
-#mainNav .navbar-brand {
+h6 {
   font-family: 'IBM Plex Sans', sans-serif; }
-
-.mandate {
-  background: #131733; }
-
-.culture {
-  background: #5d29b4; }
 
 pre {
   background-color: transparent;
   padding: 0; }
-  pre code {
-    border-radius: 10px; }
+
+.rounded {
+  border-radius: 10px; }
