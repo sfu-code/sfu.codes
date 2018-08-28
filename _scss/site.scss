@@ -1,62 +1,54 @@
-// these are all the imports from the default bootstrap package
-// rather than deleting them, comment them out if they're unused
-// so that if we ever need to use them, it's as easy as uncommenting
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/reboot";
-//@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-//@import "code";
-@import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/tables";
-//@import "forms";
-@import "../node_modules/bootstrap/scss/buttons";
-//@import "transitions";
-@import "../node_modules/bootstrap/scss/dropdown";
-@import "../node_modules/bootstrap/scss/button-group";
-//@import "input-group";
-//@import "custom-forms";
-@import "../node_modules/bootstrap/scss/nav";
-@import "../node_modules/bootstrap/scss/navbar";
-@import "../node_modules/bootstrap/scss/card";
-//@import "breadcrumb";
-//@import "pagination";
-//@import "badge";
-//@import "jumbotron";
-//@import "alert";
-//@import "progress";
-@import "../node_modules/bootstrap/scss/media";
-//@import "list-group";
-//@import "close";
-//@import "modal";
-//@import "tooltip";
-//@import "popover";
-//@import "carousel";
-@import "../node_modules/bootstrap/scss/utilities";
-//@import "print";
+// bulma :)
+@import '../node_modules/bulma/bulma.sass';
 
-// startbootstrap-creative theme
-// these are all the imports from the startbootstrap-creative theme
-// rather than deleting them, comment them out if they're unused
-// so that if we ever need to use them, it's as easy as uncommenting
-@import '../node_modules/startbootstrap-creative/scss/_variables.scss';
-@import "../node_modules/startbootstrap-creative/scss/_mixins.scss";
-@import "../node_modules/startbootstrap-creative/scss/_global.scss";
-@import "../node_modules/startbootstrap-creative/scss/_navbar.scss";
-@import "../node_modules/startbootstrap-creative/scss/_masthead.scss";
-//@import "../node_modules/startbootstrap-creative/scss/_services.scss";
-//@import "../node_modules/startbootstrap-creative/scss/_portfolio.scss";
-//@import "../node_modules/startbootstrap-creative/scss/_bootstrap-overrides.scss";
+// IBM Plex Sans & Mono
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600,700|IBM+Plex+Sans:400,500,700');
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600,700|IBM+Plex+Sans:700');
-
-// custom scss
+// Custom styles
 body {
     font-family: 'IBM Plex Mono', sans-serif;
-    background: rgb(131,58,180);
-    background: linear-gradient(346deg, rgba(131,58,180,1) 0%, rgba(233,57,57,1) 60%, rgba(248,255,39,1) 100%);
+    background: rgb(0,230,255);
+background: linear-gradient(52deg, rgba(0,230,255,1) 0%, rgba(255,255,189,1) 100%);
+	  background-size: 400% 400%;
+	  -webkit-animation: Gradient 60s ease infinite;
+	  -moz-animation: Gradient 60s ease infinite;
+	  animation: Gradient 60s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 h1,
@@ -64,17 +56,23 @@ h2,
 h3,
 h4,
 h5,
-h6,
-#mainNav,
-#mainNav .navbar-brand {
+h6 {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-
-.mandate {
-    background: #131733;
+pre {
+  background-color: transparent;
+  padding: 0;
 }
 
-.culture {
-    background: #5d29b4;
+.rounded {
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  h1 {
+    margin-left: 0.5em;
+    font-family: 'IBM Plex Mono', monospace;
+  }
 }
