@@ -3,12 +3,19 @@
   "version": "0.1.0",
   "description": "SFU Code is a club at Simon Fraser University. We aim to bring together all kinds of developers — so knowledge can be shared, connections can be made, and projects can be built.",
   "main": "_site/index.html",
+  "homepage": "https://sfu-code.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sfu-code/sfu-code.github.io.git"
+  },
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "browser-sync": "^2.24.6",
+    "browser-sync": "^2.24.7",
     "bulma": "^0.7.1",
-    "gulp-sass": "^4.0.1"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1",
+    "hoek": "^5.0.4",
+    "lodash": "^4.17.10"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
