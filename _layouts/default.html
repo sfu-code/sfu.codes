@@ -1,96 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ page.title }}</title>
+    <meta name="description" content="SFU Code is a new club starting in Fall 2018. We aim to bring together all kinds of developers — so knowledge can be shared, connections can be made, and projects can be built.">
+    <meta name="author" content="SFU Code">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico">
+  	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="img/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="img/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
 
-    <!-- Custom styles for this template -->
-    <link href="css/site.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/site.css">
 
-    <!-- Highlight.js -->
+    <!-- Highlight.js, used for the code snippet on the index page -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>
-        hljs.initHighlightingOnLoad();
+      hljs.initHighlightingOnLoad();
     </script>
+  </head>
+  <body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top">
+      <div class="container">
 
-</head>
 
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.html">SFU Code</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html">Intro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="culture.html">Culture</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="howtojoin.html">How to Join</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="img/sfu-code-logo.png" alt="SFU Code">
+          <h1 class="title is-5">SFU Code</h1>
+        </a>
+        <div class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="index.html">Intro</a>
+          <a class="navbar-item" href="details.html">Details</a>
+          <a class="navbar-item" href="faq.html">FAQ</a>
+          <a class="navbar-item" href="join.html">Join</a>
+        </div>
+      </div>
+      </div>
     </nav>
+
 
     {{ content }}
 
-    <footer class="page-footer font-small blue pt-4">
-
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-
-      <!-- Grid row -->
-      <div class="row">
-        <div class="col-md-6 mt-md-0 mt-3">
-          <h5 class="text-uppercase">Here's the bottom of the page.</h5>
-          <p>We hope you enjoyed browsing.</p>
-          <p>Don't like this site? Change it.</p>
-        </div>
-          <div class="col-md-3 col-offset-3 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h5 class="text-uppercase">Links</h5>
-
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half">
+            <h5 class="title">Here's the bottom of the page.</h5>
+            <p>We hope you enjoyed browsing.</p>
+            <p>Don't like this site? <a href="https://github.com/sfu-code/sfu-code.github.io">Change it</a>.</p>
+          </div>
+          <div class="column is-half">
+            <h5 class="title">Links</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="https://github.com/sfu-code">Github</a>
+                <a href="https://github.com/sfu-code">GitHub</a>
               </li>
               <li>
-                <a href="http://sfu-code.slack.com/">Slack</a>
-              </li>
-              <li>
-                <a href="https://www.sfu.ca/">SFU</a>
+                <a href="https://sfu-code.slack.com/">Slack</a>
               </li>
             </ul>
-
           </div>
+        </div>
+        <p class="has-text-centered">SFU Code 2018. This site is MIT licensed.</p>
       </div>
-    </div>
-    <div class="footer-copyright text-center py-3">
-      SFU Code 2018. This site is MIT licensed.
-    </div>
-  </footer>
+    </footer>
 
-</body>
+    <!-- JS -->
+    <script src="js/site.js"></script>
 
+  </body>
 </html>
