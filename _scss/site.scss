@@ -1,6 +1,6 @@
 @import '../node_modules/bulma/bulma.sass';
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600,700|IBM+Plex+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600,700|IBM+Plex+Sans:400,500,700');
 
 // custom scss
 body {
@@ -20,11 +20,18 @@ h6,
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-
 .mandate {
     background: #131733;
 }
 
 .culture {
     background: #5d29b4;
+}
+
+pre {
+  background-color: transparent;
+  padding: 0;
+  code {
+    border-radius: 10px;
+  }
 }

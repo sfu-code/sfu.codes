@@ -1,5 +1,5 @@
 /*! bulma.io v0.7.1 | MIT License | github.com/jgthms/bulma */
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600,700|IBM+Plex+Sans:700");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600,700|IBM+Plex+Sans:400,500,700");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -6440,3 +6440,9 @@ h6,
 
 .culture {
   background: #5d29b4; }
+
+pre {
+  background-color: transparent;
+  padding: 0; }
+  pre code {
+    border-radius: 10px; }
