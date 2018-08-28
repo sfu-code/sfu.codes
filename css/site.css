@@ -6422,8 +6422,8 @@ label.panel-block {
 
 body {
   font-family: 'IBM Plex Mono', sans-serif;
-  background: #00e6ff;
-  background: linear-gradient(52deg, #00e6ff 0%, #ffffbd 100%);
+  background: #0100ff;
+  background: linear-gradient(45deg, #0100ff 0%, #bdfaff 100%);
   background-size: 400% 400%;
   -webkit-animation: Gradient 60s ease infinite;
   -moz-animation: Gradient 60s ease infinite;
@@ -6469,7 +6469,16 @@ pre {
   border-radius: 10px; }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); }
   .navbar h1 {
     margin-left: 0.5em;
     font-family: 'IBM Plex Mono', monospace; }
+
+.details {
+  background: red;
+  background: linear-gradient(45deg, red 0%, #fbbdff 100%); }
+
+.faq {
+  background: #abff57;
+  background: linear-gradient(45deg, #abff57 0%, #fbbdff 100%); }
