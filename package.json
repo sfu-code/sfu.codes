@@ -5,6 +5,7 @@
   "main": "_site/index.html",
   "dependencies": {
     "browser-sync": "^2.24.6",
+    "bulma": "^0.7.1",
     "gulp-sass": "^4.0.1",
     "startbootstrap-creative": "^4.1.1"
   },
