@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,57 +27,59 @@
       hljs.initHighlightingOnLoad();
     </script>
   </head>
-  <body>
+  <body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top">
+      <div class="container">
 
-  <!-- Navigation -->
-  <nav class="navbar is-fixed-top">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">
-      <img src="img/sfu-code-logo.png" alt="SFU Code">
-      SFU Code
-    </a>
-      <div class="navbar-burger burger" data-target="navbarMenu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
 
-    <div id="navbarMenu" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="index.html">Intro</a>
-        <a class="navbar-item" href="details.html">Details</a>
-        <a class="navbar-item" href="faq.html">FAQ</a>
-        <a class="navbar-item" href="join.html">Join</a>
-      </div>
-    </div>
-  </nav>
-
-  {{ content }}
-
-  <footer class="footer">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-half">
-          <h5 class="title">Here's the bottom of the page.</h5>
-          <p>We hope you enjoyed browsing.</p>
-          <p>Don't like this site? <a href="https://github.com/sfu-code/sfu-code.github.io">Change it</a>.</p>
-        </div>
-        <div class="column is-half">
-          <h5 class="title">Links</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a href="https://github.com/sfu-code">GitHub</a>
-            </li>
-            <li>
-              <a href="https://sfu-code.slack.com/">Slack</a>
-            </li>
-          </ul>
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="img/sfu-code-logo.png" alt="SFU Code">
+          <h1 class="title is-5">SFU Code</h1>
+        </a>
+        <div class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-      <p class="has-text-centered">SFU Code 2018. This site is MIT licensed.</p>
-    </div>
-  </footer>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="index.html">Intro</a>
+          <a class="navbar-item" href="details.html">Details</a>
+          <a class="navbar-item" href="faq.html">FAQ</a>
+          <a class="navbar-item" href="join.html">Join</a>
+        </div>
+      </div>
+      </div>
+    </nav>
+
+
+    {{ content }}
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half">
+            <h5 class="title">Here's the bottom of the page.</h5>
+            <p>We hope you enjoyed browsing.</p>
+            <p>Don't like this site? <a href="https://github.com/sfu-code/sfu-code.github.io">Change it</a>.</p>
+          </div>
+          <div class="column is-half">
+            <h5 class="title">Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://github.com/sfu-code">GitHub</a>
+              </li>
+              <li>
+                <a href="https://sfu-code.slack.com/">Slack</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="has-text-centered">SFU Code 2018. This site is MIT licensed.</p>
+      </div>
+    </footer>
 
     <!-- JS -->
     <script src="js/site.js"></script>

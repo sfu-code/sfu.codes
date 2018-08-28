@@ -1,11 +1,9 @@
 {
-  "name": "sfu-code",
+  "name": "sfu-code.github.io",
   "version": "0.1.0",
-  "description": "",
+  "description": "SFU Code is a club at Simon Fraser University. We aim to bring together all kinds of developers — so knowledge can be shared, connections can be made, and projects can be built.",
   "main": "_site/index.html",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
     "browser-sync": "^2.24.6",
@@ -16,5 +14,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Macguire Rintoul",
-  "license": "ISC"
+  "license": "MIT"
 }
