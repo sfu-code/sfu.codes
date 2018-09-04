@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var child = require('child_process');
-var gutil = require('gulp-util');
+var log = require('fancy-log');
 var browserSync = require('browser-sync').create();
 
 let scssPath = './_scss/*.scss';
@@ -18,7 +18,7 @@ gulp.task('jekyll', function() {
     var jekyllLogger = function(buffer) {
       buffer.toString()
         .split(/\n/)
-        .forEach(function(message){ gutil.log('Jekyll: ' + message);});
+        .forEach(function(message){ log('Jekyll: ' + message);});
     };
 
     jekyll.stdout.on('data', jekyllLogger);
@@ -39,7 +39,7 @@ gulp.task('serve', function() {
         baseDir: siteRoot
       }
     });
-    gulp.watch(scssPath, ['scss']);
+    gulp.watch(scssPath, gulp.series('scss'));
   });
 
-gulp.task('default', [ 'jekyll', 'serve' ]);
+gulp.task('default', gulp.parallel('jekyll', 'serve'));

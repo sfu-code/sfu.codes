@@ -7,8 +7,8 @@
 // Custom styles
 body {
     font-family: 'IBM Plex Mono', sans-serif;
-    background: rgb(0,230,255);
-background: linear-gradient(52deg, rgba(0,230,255,1) 0%, rgba(255,255,189,1) 100%);
+    background: rgb(1,0,255);
+    background: linear-gradient(45deg, rgba(1,0,255,1) 0%, rgba(189,250,255,1) 100%);
 	  background-size: 400% 400%;
 	  -webkit-animation: Gradient 60s ease infinite;
 	  -moz-animation: Gradient 60s ease infinite;
@@ -75,4 +75,15 @@ pre {
     margin-left: 0.5em;
     font-family: 'IBM Plex Mono', monospace;
   }
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+  background: rgb(255,0,0);
+  background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(251,189,255,1) 100%);
+}
+
+.faq {
+  background: rgb(171,255,87);
+  background: linear-gradient(45deg, rgba(171,255,87,1) 0%, rgba(251,189,255,1) 100%);
 }
